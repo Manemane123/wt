@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Required - Product Catalog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <meta name="theme-color" content="#0b0710">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Logo" onerror="this.style.display='none'">
+            <div class="logo-text">Product Catalog</div>
+        </div>
+        
+        <h1>Password Required</h1>
+        <p class="subtitle">Enter the daily password to access the catalog</p>
+        
+        {% if error %}
+        <div class="error">{{ error }}</div>
+        {% endif %}
+        
+        <form method="POST" class="login-form">
+            <div class="form-group">
+                <label for="password">Daily Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" autocomplete="off" required autofocus>
+            </div>
+            <button type="submit" class="btn-primary">Access Catalog</button>
+        </form>
+        
+        <div class="footer">
+            <p>Password changes every 24 hours at midnight UTC</p>
+        </div>
+    </div>
+</body>
+</html>
