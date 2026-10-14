@@ -306,7 +306,7 @@ def kb_channel_products():
     return InlineKeyboardMarkup([[InlineKeyboardButton("PRESS HERE TO DM ORDER", url=DM_LINK)], [InlineKeyboardButton("FULL PRODUCT LIST", url=PRODUCT_LIST_LINK)]])
 
 def kb_channel_prices():
-    return InlineKeyboardMarkup([[InlineKeyboardButton("PRESS HERE TO DM ORDER", url=DM_LINK)], [InlineKeyboardButton("TOS AND FAQ", url=TOS_LINK)], [InlineKeyboardButton("REFER A FRIEND", url=REFER_LINK)]])
+    return InlineKeyboardMarkup([[InlineKeyboardButton("PRESS HERE TO DM ORDER", url=DM_LINK)], [InlineKeyboardButton("TOS AND FAQ", url=TOS_LINK)], [InlineKeyboardButton("SHARE OUR WEBSITE", url=REFER_LINK)]])
 
 def cat_emoji(cat):
     icons = {"flower": "Flower", "dispos": "Dispos", "edibles": "Edibles", "concentrate": "Concentrate", "psychedelic": "Psychedelic"}
