@@ -239,7 +239,6 @@ def kb_main():
         [InlineKeyboardButton("Edit Prices", callback_data="p_edit")],
         [InlineKeyboardButton("Delete Product", callback_data="p_delete")],
         [InlineKeyboardButton("Low Stock Alert", callback_data="p_low")],
-        [InlineKeyboardButton("All Products", callback_data="m_all")],
         [InlineKeyboardButton("Price List", callback_data="m_price")],
         [InlineKeyboardButton("Connected Channels", callback_data="m_channels")]
     ])
